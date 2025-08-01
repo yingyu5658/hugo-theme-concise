@@ -1,0 +1,71 @@
+{{ define "main" }}
+    <header>{{ partial "header.html" . }}</header>
+    {{ .Content }}
+    
+    <!-- 创建分页器对象 -->
+    {{ $paginator := .Paginate .Pages }}
+    {{ range $paginator.Pages }}
+        <div class="post-title">
+            <a class="rel-permalink" href="{{ .RelPermalink }}">
+                <div class="post-date">{{ .PublishDate.Format "2006-01-02" }}</div>
+                {{ .LinkTitle }}
+            </a>
+            <br />
+        </div>
+    {{ end }}
+
+    <!-- 简洁分页导航 -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="pagination simplified-pagination">
+        <nav aria-label="Page navigation">
+            <ul>
+                <!-- 首页按钮 -->
+                <li>
+                    {{ if $paginator.HasPrev }}
+                        <a href="{{ $paginator.First.URL }}" aria-label="首页">««</a>
+                    {{ else }}
+                        <span aria-hidden="true" class="disabled">««</span>
+                    {{ end }}
+                </li>
+                
+                <!-- 上一页按钮 -->
+                <li>
+                    {{ if $paginator.HasPrev }}
+                        <a href="{{ $paginator.Prev.URL }}" aria-label="上一页">«</a>
+                    {{ else }}
+                        <span aria-hidden="true" class="disabled">«</span>
+                    {{ end }}
+                </li>
+                
+                <!-- 当前页/总页数 -->
+                <li class="current-page">
+                    <span>{{ $paginator.PageNumber }}/{{ $paginator.TotalPages }}</span>
+                </li>
+                
+                <!-- 下一页按钮 -->
+                <li>
+                    {{ if $paginator.HasNext }}
+                        <a href="{{ $paginator.Next.URL }}" aria-label="下一页">»</a>
+                    {{ else }}
+                        <span aria-hidden="true" class="disabled">»</span>
+                    {{ end }}
+                </li>
+                
+                <!-- 末页按钮 -->
+                <li>
+                    {{ if $paginator.HasNext }}
+                        <a href="{{ $paginator.Last.URL }}" aria-label="末页">»»</a>
+                    {{ else }}
+                        <span aria-hidden="true" class="disabled">»»</span>
+                    {{ end }}
+                </li>
+            </ul>
+        </nav>
+    </div>
+    {{ end }}
+	<footer>
+		{{ partial "footer.html" . }} 
+    </footer>
+
+
+{{ end }}
