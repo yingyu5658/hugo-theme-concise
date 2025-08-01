@@ -2,7 +2,9 @@
 
 一个简约的Hugo主题。专注于写作。
 
-
+[](./images/homepage.png)
+[](./images/post.png)
+[](./images/single.png.png)
 
 ## Features
 
@@ -57,3 +59,22 @@ style = "emacs"    #github、emacs、solarized-light 等
 [outputFormats.RSS]
   baseName = "atom"
 ```
+
+## Comments
+
+- 支持Waline评论系统
+
+在`layouts/_default/single.html`中修改serverURL
+
+```html
+<script type="module">
+	import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+	init({
+		el: '#waline',
+		serverURL: ''
+                ^^^^^^^
+            替换为你的serverURL
+	});
+</script>
+```
+
