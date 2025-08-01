@@ -8,14 +8,20 @@
 <div class="post-content">
 {{ .Content | safeHTML}}
 </div>
- {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} <div id="waline"></div>
+ {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 <link rel="stylesheet" href="/css/main.css" />
 <div id="waline"></div>
-<script
-    type="module"> import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js'; init({ el: '#waline', serverURL: 'waline.yingyu5658.me', }); </script>
+<script type="module">
+	import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+	init({
+		el: '#waline',
+		serverURL: ''
+	});
+</script>
+
 	<footer>
 		{{ partial "footer.html" . }} 
     </footer>
-
 
 {{ end }}
