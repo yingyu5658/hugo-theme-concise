@@ -2,9 +2,9 @@
 
 一个简约的Hugo主题。专注于写作。
 
-[homepage](./images/homepage.png)
-[post](./images/post.png)
-[single](./images/single.png.png)
+![homepage](./images/homepage.png)
+![post](./images/post.png)
+![single](./images/single.png)
 
 ## Features
 
