@@ -1,9 +1,9 @@
 ### **Concise**
 A minimalist Hugo theme focused on writing.
 
-![homepage](./images/homepage.png)
-![post](./images/tn.png)
-![single](./images/screenshot.png)
+![homepage](https://raw.githubusercontent.com/yingyu5658/hugo-theme-concise/refs/heads/main/images/homepage.png)
+![post](https://raw.githubusercontent.com/yingyu5658/hugo-theme-concise/refs/heads/main/images/tn.png)
+![single](https://raw.githubusercontent.com/yingyu5658/hugo-theme-concise/refs/heads/main/images/screenshot.png)
 
 ---
 
