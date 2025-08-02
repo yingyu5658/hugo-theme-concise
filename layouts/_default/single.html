@@ -1,6 +1,6 @@
 {{ define "main" }} 
 	<header>{{ partial "header.html" . }}</header>
-	   <h2>{{ .Title }}</h2> 
+	   <h1>{{ .Title }}</h1> 
 <time datetime="{{ .Date | time.Format "2006-01-02" }}">
      {{ .Date | time.Format "2006-01-02" }}
    </time>
