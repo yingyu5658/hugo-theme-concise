@@ -19,13 +19,6 @@ time {
     line-height: 1px;
 }
 
-.post-content h1::before { content: "# "; }
-.post-content h2::before { content: "# "; }
-.post-content h3::before { content: "# "; }
-.post-content h4::before { content: "# "; }
-.post-content h5::before { content: "# "; }
-.post-content h6::before { content: "# "; }
-
 .simplified-pagination nav ul {
     display: flex;
     list-style: none;
