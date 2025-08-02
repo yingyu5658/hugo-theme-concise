@@ -10,7 +10,8 @@ body {
     color: #222;
     line-height: 1.5;
     margin: auto;
-    padding: auto;
+    max-width: 750px;
+	height: 100%;
 }
 
 time {
@@ -43,35 +44,6 @@ time {
 .simplified-pagination .current-page span {
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 header {
     border-bottom: #d3d3d3 1px solid;
@@ -122,8 +94,12 @@ img {
 }
 
 .title {
-    margin-top: 30px;
+	margin-top: 0;
     line-height: 20px;
+}
+
+h1.title {
+	padding-top: 30px;
 }
 
 .subtitle {

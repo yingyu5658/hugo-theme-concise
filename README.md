@@ -1,25 +1,25 @@
-# Concise
-
-一个简约的Hugo主题。专注于写作。
+### **Concise**
+A minimalist Hugo theme focused on writing.
 
 ![homepage](./images/homepage.png)
-![post](./images/post.png)
-![single](./images/single.png)
+![post](./images/tn.png)
+![single](./images/screenshot.png)
 
-## Features
+---
 
-- 极致简约设计
-- 无多余功能
-- 回归博客本质
+### **Features**
+- **Extremely Minimalist Design**
+- **No Unnecessary Features**
+- **Focus on the Essence of Blogging**
 
-## Quickstart
+---
 
+### **Quick Start**
 ```bash
 git clone https://github.com/yingyu5658/hugo-theme-concise.git themes/concise
 ```
 
-在站点根目录`hugo.toml`中填入以下配置：
-
+Add the following configuration to `hugo.toml` in your site's root directory:
 ```toml
 baseURL = "..."
 publishDir = "public"
@@ -34,15 +34,15 @@ posts = "YOUR_PERMALINKS"
 
 [params]
 [[params.homepage.content]]
-name = "文章归档"
+name = "Archives"# Posts archive
 url = "/post"
 
 [[params.homepage.content]]
-name = "友情链接"
+name = "Links"# Friend links
 url = "/links"
 
 [[params.homepage.content]]
-name = "关于"
+name = "About"
 url = "/about"
 
 [[params.homepage.content]]
@@ -53,28 +53,25 @@ url = "/atom.xml"
 content = "Email: YOUR_EMAIL"
 
 [markup.highlight]
-noClasses = true 
-style = "emacs"    #github、emacs、solarized-light 等
+noClasses = true
+style = "emacs"# Options: github, emacs, solarized-light, etc.
 
 [outputFormats.RSS]
-  baseName = "atom"
+baseName = "atom"
 ```
 
-## Comments
+---
 
-- 支持Waline评论系统
+### **Comments**
+- **Waline Comment System Support**
 
-在`layouts/_default/single.html`中修改serverURL
-
+Modify `serverURL` in `layouts/_default/single.html`:
 ```html
 <script type="module">
-	import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-	init({
-		el: '#waline',
-		serverURL: ''
-                ^^^^^^^
-            替换为你的serverURL
-	});
+import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+init({
+el: '#waline',
+serverURL: '' // ← Replace with your Waline server URL
+});
 </script>
 ```
-

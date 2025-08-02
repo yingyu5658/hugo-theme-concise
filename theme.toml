@@ -4,7 +4,7 @@ licenselink = 'https://github.com/yingyu5658/hugo-theme-concise'
 description = 'A concise hugo theme. Concentrate on writting.'
 
 # The home page of the theme, where the source can be found
-homepage = ''
+homepage = 'https://github.com/yingyu5658/hugo-theme-concise'
 
 # If you have a running demo of the theme
 demosite = 'https://github.com/yingyu5658/hugo-theme-concise/tree/main/exampleSite'
@@ -17,3 +17,5 @@ features = ['some', 'awesome', 'features']
 [author]
   name = 'yingyu5658'
   homepage = 'https://www.yingyu5658.me/'
+
+min_version = "0.41"
