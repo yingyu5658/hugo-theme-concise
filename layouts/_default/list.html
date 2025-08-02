@@ -1,5 +1,7 @@
 {{ define "main" }}
-    <header>{{ partial "header.html" . }}</header>
+    <header>
+		{{ partial "header.html" . }}
+	</header>
     {{ .Content }}
     
     <!-- 创建分页器对象 -->

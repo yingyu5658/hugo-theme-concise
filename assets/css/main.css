@@ -14,9 +14,13 @@ body {
 	height: 100%;
 }
 
+.inner-post-title {
+	margin-bottom: 10px;
+}
+
 time {
-    margin: 0;
     line-height: 1px;
+	font-size: 18px;
 }
 
 .simplified-pagination nav ul {
