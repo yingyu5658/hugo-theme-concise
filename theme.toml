@@ -18,4 +18,8 @@ features = ['some', 'awesome', 'features']
   name = 'yingyu5658'
   homepage = 'https://www.yingyu5658.me/'
 
-min_version = "0.41"
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+    max = "0.84.2"
