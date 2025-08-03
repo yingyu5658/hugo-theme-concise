@@ -25,6 +25,10 @@ video {
     --text-color: #fff;   /* 暗色文字 */
   }
 
+  waline {
+  	filter: invert(1) hue-rotate(180deg);
+  }
+
   .rel-permalink {
 	  color: #fff !important;
   }
