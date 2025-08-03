@@ -25,7 +25,7 @@ video {
     --text-color: #fff;   /* 暗色文字 */
   }
 
-  waline {
+  #waline {
   	filter: invert(1) hue-rotate(180deg) !important;
   }
 
