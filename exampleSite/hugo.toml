@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+description = "This is subtitle"
+theme = ["concise"]
+pagination = { pagerSize = 25 }
+
+[params]
+[[params.homepage.content]]
+name = "Post"
+url = "/post"
+
+[params.footer]
+content = "This is footer"
+
+[[params.waline]]
+enabled = true
+serverURL = "https://waline.yingyu5658.me/"
+
+
+[markup.highlight]
+noClasses = true
+style = "emacs"    #github、emacs、solarized-light 等
+
+[outputFormats.RSS]
+  baseName = "atom"
