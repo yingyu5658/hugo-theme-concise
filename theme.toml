@@ -11,7 +11,7 @@ demosite = 'https://www.yingyu5658.me'
 
 # Taxonomy terms
 tags = ['blog']
-features = []
+features = ["responsive"]
 
 # If the theme has a single author
 [author]
